@@ -23,7 +23,7 @@
 # Import the system modules needed to run rpiMotorlib.py
 import sys
 import time
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 # ==================== CLASS SECTION ===============================
 
@@ -37,7 +37,7 @@ class BYJMotor(object):
     def __init__(self, name="BYJMotorX", motor_type="28BYJ"):
         self.name = name
         self.motor_type = motor_type
-        GPIO.setmode(GPIO.BCM)
+        GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
         self.stop_motor = False
 
@@ -198,7 +198,7 @@ class A4988Nema(object):
             self.mode_pins = False
 
         self.stop_motor = False
-        GPIO.setmode(GPIO.BCM)
+        GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
 
     def motor_stop(self):
@@ -338,7 +338,7 @@ class A3967EasyNema(object):
             self.mode_pins = False
 
         self.stop_motor = False
-        GPIO.setmode(GPIO.BCM)
+        GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
 
     def motor_stop(self):

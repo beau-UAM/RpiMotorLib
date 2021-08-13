@@ -162,7 +162,7 @@ Center-delay-min-delay-max-delay- and so on until user quits or set-limit reache
  
 ```sh
 
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 from RpiMotorLib import rpiservolib 
 
 myservotest  = rpiservolib.SG90servo("servoone", 50, 3, 11)
@@ -201,7 +201,7 @@ function servo_move 5 inputs
  with non-verbose output and initdelay of 10mS
  
 ```sh
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 # import the library
 from RpiMotorLib import rpiservolib 
@@ -263,7 +263,7 @@ degrees in 3 degree steps every two seconds, with an initial delay
 of one second and verbose output.   
 
 ```sh
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 # import the library
 from RpiMotorLib import rpiservolib 

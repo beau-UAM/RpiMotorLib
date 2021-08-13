@@ -116,7 +116,7 @@ To run A stepper motor clockwise in Full mode for 100 steps.
 ```sh
 
  
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 # import the library
 from RpiMotorLib import RpiMotorLib

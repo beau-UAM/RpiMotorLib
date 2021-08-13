@@ -18,9 +18,9 @@ from RpiMotorLib import rpi_pservo_lib
 
 # Comment in To Test servo stop put push button to VCC on GPIO 17
 """
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 myservotest  = ServoPigpio("servoone", 50, 1000, 2000)
 """

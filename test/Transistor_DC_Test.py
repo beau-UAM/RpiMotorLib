@@ -2,7 +2,7 @@
 """ test example file for rpiMotorlib.py : transistor DC motor """
 
 import time 
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 #import sys
 #sys.path.insert(0, '/home/pi/Documents/tech/RpiMotorLib/RpiMotorLib')
 #from rpi_dc_lib import TranDc

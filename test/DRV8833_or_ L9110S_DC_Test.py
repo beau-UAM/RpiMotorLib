@@ -3,7 +3,7 @@
 testfile for  DC motor run by DRV8833 or L9110s test"""
 
 import time 
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 #import sys
 #sys.path.insert(0, '/home/pi/Documents/tech/RpiMotorLib/RpiMotorLib')
 

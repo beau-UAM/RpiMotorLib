@@ -2,7 +2,7 @@
 """ test example file for rpiMotorlib.py A4988 NEMA"""
 
 import time
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 """
 # Next 3 lines for development, local library testing import
@@ -18,7 +18,7 @@ from RpiMotorLib import RpiMotorLib
 """
 # Comment in To Test motor stop, put a push button to VCC on GPIO 17
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 """
 

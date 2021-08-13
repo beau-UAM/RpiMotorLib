@@ -8,7 +8,7 @@ use push button(to VCC) on GPIO 17 to stop motors if necessary
 """
 
 import time
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 import concurrent.futures
 
 
@@ -25,7 +25,7 @@ from RpiMotorLib import RpiMotorLib
 
 # To Test motor stop, put push button to VCC on GPIO 17
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 # Declare two named instance of class, pass your name and type of motor

@@ -14,7 +14,7 @@
 # Import the system modules needed to run rpiMotorlib.py
 import sys
 import time
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 # ==================== CLASS SECTION ===============================
 
@@ -39,7 +39,7 @@ class SG90servo(object):
         self.y_one = y_one
         self.y_two = y_two
         self.stop_servo = False
-        GPIO.setmode(GPIO.BCM)
+        GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
 
     def servo_stop(self):

@@ -41,7 +41,7 @@ This code will run motor up to max duty cycle % hold it for
 ```sh
 
 import time 
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 # import library
 from RpiMotorLib import rpi_dc_lib

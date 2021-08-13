@@ -123,7 +123,7 @@ motor_stop(), if you wish to stop motor before the end of its run. You can also 
 
 ```python
 
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 # import the library
 from RpiMotorLib import RpiMotorLib

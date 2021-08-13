@@ -2,7 +2,7 @@
 """ test example file for rpiMotorlib.py L298 dc motor"""
 
 import time 
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 #import sys
 #sys.path.insert(0, '/home/pi/Documents/tech/RpiMotorLib/RpiMotorLib')
 from RpiMotorLib import rpi_dc_lib 

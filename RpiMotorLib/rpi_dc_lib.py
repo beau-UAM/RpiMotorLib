@@ -21,7 +21,7 @@
 # ========================== IMPORTS ======================
 # Import the system modules needed to run rpiMotorlib.py
 import time
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 # ==================== CLASS SECTION ===============================
 
@@ -49,7 +49,7 @@ class L298NMDc():
         self.freq = freq
         self.verbose = verbose
 
-        GPIO.setmode(GPIO.BCM)
+        GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
         GPIO.setup(self.pin_one, GPIO.OUT)
         GPIO.setup(self.pin_two, GPIO.OUT)
@@ -137,7 +137,7 @@ class DRV8833NmDc():
         self.freq = freq
         self.verbose = verbose
 
-        GPIO.setmode(GPIO.BCM)
+        GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
         GPIO.setup(self.pin_one, GPIO.OUT)
         GPIO.setup(self.pin_two, GPIO.OUT)
@@ -212,7 +212,7 @@ class TranDc():
         self.freq = freq
         self.verbose = verbose
 
-        GPIO.setmode(GPIO.BCM)
+        GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
         GPIO.setup(self.pin, GPIO.OUT)
 
@@ -257,7 +257,7 @@ class TB6612FNGDc():
         self.freq = freq
         self.verbose = verbose
 
-        GPIO.setmode(GPIO.BCM)
+        GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
         GPIO.setup(self.pin_one, GPIO.OUT)
         GPIO.setup(self.pin_two, GPIO.OUT)
@@ -276,7 +276,7 @@ class TB6612FNGDc():
 
     def standby(standby_pin, standby_on=True):
         """Enables/disables the  standby mode of TB661FNG controller"""
-        GPIO.setmode(GPIO.BCM)
+        GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
         if standby_on:
             GPIO.setup(standby_pin, GPIO.OUT)

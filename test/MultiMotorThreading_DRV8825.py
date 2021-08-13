@@ -10,7 +10,7 @@ use push button(to VCC) on GPIO 17 to stop motors if necessary
 
 import time
 import concurrent.futures
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 # Next 3 lines for development local library testing import
 # Comment out in production release and change RpiMotorLib.A4988Nema to A4988Nema
@@ -23,7 +23,7 @@ from RpiMotorLib import RpiMotorLib
 
 # To Test motor stop, put push button to VCC on GPIO 17
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 # GPIO pins

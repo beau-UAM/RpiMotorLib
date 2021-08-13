@@ -148,7 +148,7 @@ You can also stop with keyboard interrupt.
  
 ```sh
 
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 
 # import the library

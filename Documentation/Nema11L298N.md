@@ -167,7 +167,7 @@ motor_stop(), if you wish to stop motor before end of its run. You can also stop
 ```sh
 
 import time 
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 # This code snippet is for Version 1.2 
 

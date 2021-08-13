@@ -2,7 +2,7 @@
 """ test example file for rpiMotorlib.py L298 stepper tests"""
 
 import time 
-import RPi.GPIO as GPIO
+import Jetson.GPIO as GPIO
 
 # Next 3 lines for development, local library testing import
 # Comment out in production release and change RpiMotorLib.BYJMotor to BYJMotor
@@ -20,7 +20,7 @@ mymotortest = RpiMotorLib.BYJMotor("MyMotorOne", "Nema")
 """
 # To Test motor stop put push button to VCC on GPIO 17 
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 """
 
